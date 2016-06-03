@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160603150828) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "agencies", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
@@ -31,6 +34,7 @@ ActiveRecord::Schema.define(version: 20160603150828) do
     t.datetime "updated_at",    null: false
   end
 
-  add_index "properties", ["agency_id"], name: "index_properties_on_agency_id"
+  add_index "properties", ["agency_id"], name: "index_properties_on_agency_id", using: :btree
 
+  add_foreign_key "properties", "agencies"
 end
