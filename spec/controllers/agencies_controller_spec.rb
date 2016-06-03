@@ -10,7 +10,7 @@ RSpec.describe AgenciesController, type: :controller do
         a5 = create(:agency,:created_at => 2.days.ago)
         a6 = create(:agency,:created_at => 1.day.ago)
         get 'index'
-        expect(assigns(:agencies)).to match_array [a2,a3,a4,a5,a6]
+        expect(assigns(:agencies)).to match_array [a1,a2,a3,a4,a5,a6]
       end
     end
 end

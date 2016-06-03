@@ -1,2 +1,8 @@
-<h1>Property#show</h1>
-<p>Find me in app/views/property/show.html.erb</p>
+<h3 class="text-uppercase"><%= @property.address %></h3>
+<dl class="dl-horizontal well">
+  <dt>Title:</dt><dd><%= @property.title %></dd>
+  <dt>Price:</dt><dd><%= @property.price %></dd>
+  <dt>Property Type:</dt><dd><%= @property.property_type %></dd>
+  <dt>City:</dt><dd><%= @property.city %></dd>
+  <dt>Description:</dt><dd><%= @property.description %></dd>
+</dl>
