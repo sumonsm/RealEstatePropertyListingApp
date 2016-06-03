@@ -1,4 +1,4 @@
-<h2>Properties for <strong><%= @agency.title %></strong></h2>
+<h3>Properties for <strong><%= @agency.title %></strong></h3>
 <div class="well main">
   <% if @properties.blank? %>
     <span class = "text-danger">No properties found!</span>
@@ -8,8 +8,8 @@
         <tr>
           <th>Title</th>
           <th>City</th>
-          <th>address</th>
-          <th>Type</th>
+          <th>Address</th>
+          <th>Property Type</th>
           <th>Price</th>
         </tr>
       </thead>
@@ -35,6 +35,6 @@
         <% end %>
       </tbody>
     </table>
-    <%= will_paginate @agencies %>
+    <%= will_paginate @agencies, renderer: BootstrapPagination::Rails %>
   <% end %>
 </div>

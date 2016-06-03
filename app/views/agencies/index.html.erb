@@ -1,4 +1,4 @@
-<h2>Agency Listing</h2>
+<h3>Agency Listing</h3>
 <div class="well main">
   <% if @agencies.blank? %>
     <span class = "text-danger">No agencies found!</span>
@@ -10,7 +10,6 @@
         </tr>
       </thead>
       <tbody>
-        <%= will_paginate @agencies %>
         <% @agencies.each do |a| %>
           <tr>
             <td>
@@ -20,6 +19,6 @@
         <% end %>
       </tbody>
     </table>
-    <%= will_paginate @agencies %>
+    <%= will_paginate @agencies, renderer: BootstrapPagination::Rails %>
   <% end %>
 </div>
