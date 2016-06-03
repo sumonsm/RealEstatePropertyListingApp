@@ -1,0 +1,23 @@
+<h2>Agency Listing</h2>
+<div class="well main">
+  <% if @agencies.blank? %>
+    <span class = "text-danger">No agencies found!</span>
+  <% else %>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+          <% @agencies.each do |a| %>
+          <tr>
+            <td>
+              <%= link_to(a.title, "#") %>
+            </td>
+          </tr>
+        <%end%>
+      </tbody>
+    </table>
+  <% end %>
+</div>
