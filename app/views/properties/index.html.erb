@@ -1,0 +1,39 @@
+<h2>Properties for <strong><%= @agency.title %></strong></h2>
+<div class="well main">
+  <% if @properties.blank? %>
+    <span class = "text-danger">No properties found!</span>
+  <% else %>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>City</th>
+          <th>address</th>
+          <th>Type</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @properties.each do |p| %>
+          <tr>
+            <td>
+              <%= link_to(p.title, agency_property_path(@agency.id, p.id)) %>
+            </td>
+            <td>
+              <%= p.city %>
+            </td>
+            <td>
+              <%= p.address %>
+            </td>
+            <td>
+              <%= p.property_type %>
+            </td>
+            <td>
+              <%= p.price %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</div>

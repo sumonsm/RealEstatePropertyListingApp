@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe AgencyController, type: :controller do
+RSpec.describe AgenciesController, type: :controller do
   describe "GET 'index'" do
       it "delivers the latest 5 listings" do
         a1 = create(:agency,:created_at => 6.days.ago)

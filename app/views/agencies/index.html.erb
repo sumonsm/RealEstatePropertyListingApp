@@ -10,13 +10,13 @@
         </tr>
       </thead>
       <tbody>
-          <% @agencies.each do |a| %>
+        <% @agencies.each do |a| %>
           <tr>
             <td>
-              <%= link_to(a.title, "#") %>
+              <%= link_to(a.title, agency_properties_path(a)) %>
             </td>
           </tr>
-        <%end%>
+        <% end %>
       </tbody>
     </table>
   <% end %>

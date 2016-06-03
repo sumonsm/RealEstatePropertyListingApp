@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'agency#index'
+  resources :agencies do
+    resources :properties
+  end
 
+  root to: 'agencies#index'
 end
