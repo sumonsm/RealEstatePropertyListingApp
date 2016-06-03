@@ -1,5 +1,5 @@
 class AgenciesController < ApplicationController
   def index
-    @agencies = Agency.order("created_at DESC").limit(5)
+    @agencies = Agency.paginate(:page => params[:page]).order("created_at DESC")
   end
 end
