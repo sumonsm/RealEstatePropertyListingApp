@@ -22,23 +22,17 @@ a13 = Agency.create!(:title => 'Agency 13', :created_at => 1.days.ago)
 p1 = Property.create!(title: 'Property 1', agency_id: a1.id,
   city: 'ny',
   property_type: 'rental',
-
-  price: '88888990.00',
+  price: '81288990.00',
   created_at: 4.days.ago,
-  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
-
-Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis .
 ")
 
-
-
 p2 = Property.create!(title: 'Property 2', agency_id: a1.id,
-  city: 'ny',
-  property_type: 'rental',
-
+  city: 'la',
+  property_type: 'residential',
   price: '88888990.00',
   created_at: 4.days.ago,
-  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
+  description: "No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
 
 Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
 ")
@@ -46,20 +40,15 @@ Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergre
 
 p3 = Property.create!(title: 'Property 5', agency_id: a1.id,
   city: 'ny',
-  property_type: 'rental',
-
+  property_type: 'commercial',
   price: '88888990.00',
   created_at: 4.days.ago,
-  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
-
-Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam  mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
 ")
 
-
 p4 = Property.create!(title: 'Property 6', agency_id: a1.id,
-  city: 'ny',
+  city: 'la',
   property_type: 'rental',
-
   price: '88888990.00',
   created_at: 4.days.ago,
   description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
@@ -74,21 +63,17 @@ p5 = Property.create!(title: 'Property 7', agency_id: a1.id,
 
   price: '88888990.00',
   created_at: 4.days.ago,
-  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
-
-Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+  description: "Small apt.
 ")
 
 
 p6 = Property.create!(title: 'Property 8', agency_id: a1.id,
-  city: 'ny',
-  property_type: 'rental',
+  city: 'la',
+  property_type: 'commercial',
 
   price: '88888990.00',
   created_at: 4.days.ago,
-  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
-
-Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+  description: "Big house.
 ")
 
 
@@ -98,9 +83,7 @@ p7 = Property.create!(title: 'Property 9', agency_id: a1.id,
 
   price: '88888990.00',
   created_at: 4.days.ago,
-  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
-
-Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+  description: "foo bar.
 ")
 
 
@@ -116,7 +99,7 @@ Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergre
 ")
 
 
-p9 = Property.create!(title: 'Property 11', agency_id: a2.id,
+p9 = Property.create!(title: 'Property 9', agency_id: a2.id,
   city: 'ny',
   property_type: 'rental',
   price: '88888990.00',
@@ -126,7 +109,51 @@ p9 = Property.create!(title: 'Property 11', agency_id: a2.id,
 Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
 ")
 
-9.times do |i|
+p10 = Property.create!(title: 'Property 10', agency_id: a1.id,
+  city: 'la',
+  property_type: 'commercial',
+
+  price: '88888990.00',
+  created_at: 4.days.ago,
+  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
+
+Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+")
+
+
+p11 = Property.create!(title: 'Property 11', agency_id: a1.id,
+  city: 'ny',
+  property_type: 'rental',
+
+  price: '88888990.00',
+  created_at: 4.days.ago,
+  description: "Lorem ipsum dolor sit amet, vel purto dicam at, probo petentium persecuti ne his. Pro appareat periculis delicatissimi at, pro delenit omnesque cu. Ea vel nihil interpretaris, no insolens eleifend volutpat ius. Per ad etiam debet accusamus. No eum docendi abhorreant, everti conceptam scriptorem duo ei. Per audiam iuvaret adipiscing ad, esse autem dignissim no mea. Eos noluisse facilisi ei, ea zril assentior vix.
+
+Et probo erant sea, mei vitae deterruisset eu. Ad sea aliquid repudiare gubergren, nam vero oblique intellegebat an, purto case mundi ad sit. Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+")
+
+
+p12 = Property.create!(title: 'Property 12', agency_id: a1.id,
+  city: 'ny',
+  property_type: 'rental',
+
+  price: '88888990.00',
+  created_at: 4.days.ago,
+  description: "Eam enim erant te, laoreet repudiare te mei. An pri bonorum perpetua pericula, solet laoreet conceptam usu ea.
+")
+
+
+p13 = Property.create!(title: 'Property 13', agency_id: a2.id,
+  city: 'ny',
+  property_type: 'residential',
+  price: '8990.00',
+  created_at: 4.days.ago,
+  description: "foo bar.
+")
+
+
+
+13.times do |i|
   p = Property.find(i+1)
   Address.create!(address: "Apt# #{i + rand(1..4)}, Road# #{i + rand(5-10)}, Riddler Park", property_id: p.id)
 end
