@@ -1,5 +1,5 @@
-Property.destroy_all
-Agency.destroy_all
+# Property.destroy_all
+# Agency.destroy_all
 
 a1 = Agency.create!(:title => 'Agency 1', :created_at => 11.days.ago)
 a2 = Agency.create!(:title => 'Agency 2', :created_at => 10.days.ago)

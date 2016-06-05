@@ -16,3 +16,4 @@
 !/log/.keep
 /tmp
 .rvmrc
+config/database.yml
